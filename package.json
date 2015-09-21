@@ -1,0 +1,47 @@
+{
+  "name": "grunt-crx-simple",
+  "description": "Creates crx archive from zip.",
+  "version": "0.0.2",
+  "homepage": "https://github.com/mindfreakthemon/grunt-crx",
+  "author": {
+    "name": "Monday Freelem",
+    "email": "mfthemon@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mindfreakthemon/grunt-crx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mindfreakthemon/grunt-crx/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/mindfreakthemon/grunt-crx/blob/master/LICENSE"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "grunt jshint"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.1.1"
+  },
+  "peerDependencies": {
+    "grunt": "^0.4.1"
+  },
+  "dependencies": {
+    "node-forge": "^0.6.12"
+  },
+  "readme": "# grunt-crx\n\n> Create crx archive from zip\n\n## Getting Started\nThis plugin requires Grunt `~0.4.1`\n\nIf you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:\n\n```shell\nnpm install grunt-crx-simple --save-dev\n```\n\nOne the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:\n\n```js\ngrunt.loadNpmTasks('grunt-crx');\n```\n\n## Bump task\n_Run this task with the `grunt crx` command._\n\n\n### Settings\n\n#### key\nType: `String`  \nDefault: `'key.pem'`\n\nPath to your private key in PEM format to sign crx with.\n\n\n## Usage Examples\n\n```js\ncrx: {\n\toptions: {\n\t\tkey: 'path/to/my-private-rsa-key.pem'\n\t},\n\textension: {\n\t\tsrc: 'build/extension.zip',\n\t\tdest: 'build/extension.crx'\n\t}\n},\n```\n",
+  "readmeFilename": "README.md",
+  "gitHead": "b95abd8b5c7ffdb2c267325c9be7d6cee760935c",
+  "_id": "grunt-crx-simple@0.0.2",
+  "_shasum": "b7f21daee9d77cdc8f2c4439c43e54e538b67be2",
+  "_from": "grunt-crx-simple@*"
+}
